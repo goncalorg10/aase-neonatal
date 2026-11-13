@@ -1,0 +1,95 @@
+dataset,coluna,papel,tipo,descrição
+D1,episodio,identificação,str,Código do episódio (EPnnn)
+D1,data,identificação,datetime64[us],Data do episódio-dia (AAAA-MM-DD)
+D1,sat_o2_media,entrada,float64,Média da saturação de oxigénio do dia (%)
+D1,sat_o2_max,entrada,float64,Máximo da saturação de oxigénio do dia (%)
+D1,sat_o2_dp,entrada,float64,Desvio-padrão da saturação de oxigénio do dia (%)
+D1,puls_rate_media,entrada,float64,Média do pulso do dia (bpm)
+D1,puls_rate_max,entrada,float64,Máximo do pulso do dia (bpm)
+D1,puls_rate_dp,entrada,float64,Desvio-padrão do pulso do dia (bpm)
+D1,perfusion_media,entrada,float64,Média da perfusão do dia (%)
+D1,perfusion_min,entrada,float64,Mínimo da perfusão do dia (%)
+D1,perfusion_max,entrada,float64,Máximo da perfusão do dia (%)
+D1,perfusion_dp,entrada,float64,Desvio-padrão da perfusão do dia (%)
+D1,n_horas,entrada,int64,Nº de horas com registo de sinais vitais no dia
+D1,pct_dessaturacao,entrada,float64,% das horas medidas do dia com saturação < 90 %
+D1,pct_bradicardia,entrada,float64,% das horas medidas do dia com pulso < 100 bpm
+D1,pct_taquicardia,entrada,float64,% das horas medidas do dia com pulso > 180 bpm
+D1,pct_baixa_perfusao,entrada,float64,"% das horas medidas do dia com perfusão < 0,7 %"
+D1,sat_o2_var,entrada,float64,Variação da média diária da saturação de oxigénio em relação ao dia anterior (%); 0 no 1.º dia
+D1,sat_o2_desvio,entrada,float64,Diferença entre a média diária da saturação de oxigénio e a média dos dias anteriores do episódio (%); 0 no 1.º dia
+D1,puls_rate_var,entrada,float64,Variação da média diária do pulso em relação ao dia anterior (bpm); 0 no 1.º dia
+D1,puls_rate_desvio,entrada,float64,Diferença entre a média diária do pulso e a média dos dias anteriores do episódio (bpm); 0 no 1.º dia
+D1,perfusion_var,entrada,float64,Variação da média diária da perfusão em relação ao dia anterior (%); 0 no 1.º dia
+D1,perfusion_desvio,entrada,float64,Diferença entre a média diária da perfusão e a média dos dias anteriores do episódio (%); 0 no 1.º dia
+D1,dia_episodio,entrada,int64,Posição do dia no internamento (1 = 1.º dia com sinais vitais)
+D1,comeca_no_limite,entrada,int64,1 se o episódio começa no 1.º dia dos dados (início pode ser anterior)
+D1,Doença das membranas hialinas,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Icterícia neonatal,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Anemia,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Citomegalovírus,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Persistência do canal arterial,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Displasia broncopulmonar,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Sépsis,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Refluxo gastroesofágico,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D1,Lesão renal aguda,alvo,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,episodio,identificação,str,Código do episódio (EPnnn)
+D2,data,identificação,datetime64[us],Data do episódio-dia (AAAA-MM-DD)
+D2,sat_o2_media,entrada,float64,Média da saturação de oxigénio do dia (%)
+D2,sat_o2_max,entrada,float64,Máximo da saturação de oxigénio do dia (%)
+D2,sat_o2_dp,entrada,float64,Desvio-padrão da saturação de oxigénio do dia (%)
+D2,puls_rate_media,entrada,float64,Média do pulso do dia (bpm)
+D2,puls_rate_max,entrada,float64,Máximo do pulso do dia (bpm)
+D2,puls_rate_dp,entrada,float64,Desvio-padrão do pulso do dia (bpm)
+D2,perfusion_media,entrada,float64,Média da perfusão do dia (%)
+D2,perfusion_min,entrada,float64,Mínimo da perfusão do dia (%)
+D2,perfusion_max,entrada,float64,Máximo da perfusão do dia (%)
+D2,perfusion_dp,entrada,float64,Desvio-padrão da perfusão do dia (%)
+D2,n_horas,entrada,int64,Nº de horas com registo de sinais vitais no dia
+D2,pct_dessaturacao,entrada,float64,% das horas medidas do dia com saturação < 90 %
+D2,pct_bradicardia,entrada,float64,% das horas medidas do dia com pulso < 100 bpm
+D2,pct_taquicardia,entrada,float64,% das horas medidas do dia com pulso > 180 bpm
+D2,pct_baixa_perfusao,entrada,float64,"% das horas medidas do dia com perfusão < 0,7 %"
+D2,sat_o2_var,entrada,float64,Variação da média diária da saturação de oxigénio em relação ao dia anterior (%); 0 no 1.º dia
+D2,sat_o2_desvio,entrada,float64,Diferença entre a média diária da saturação de oxigénio e a média dos dias anteriores do episódio (%); 0 no 1.º dia
+D2,puls_rate_var,entrada,float64,Variação da média diária do pulso em relação ao dia anterior (bpm); 0 no 1.º dia
+D2,puls_rate_desvio,entrada,float64,Diferença entre a média diária do pulso e a média dos dias anteriores do episódio (bpm); 0 no 1.º dia
+D2,perfusion_var,entrada,float64,Variação da média diária da perfusão em relação ao dia anterior (%); 0 no 1.º dia
+D2,perfusion_desvio,entrada,float64,Diferença entre a média diária da perfusão e a média dos dias anteriores do episódio (%); 0 no 1.º dia
+D2,dia_episodio,entrada,int64,Posição do dia no internamento (1 = 1.º dia com sinais vitais)
+D2,comeca_no_limite,entrada,int64,1 se o episódio começa no 1.º dia dos dados (início pode ser anterior)
+D2,Doença das membranas hialinas,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Icterícia neonatal,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Anemia,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Citomegalovírus,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Persistência do canal arterial,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Displasia broncopulmonar,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Sépsis,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Refluxo gastroesofágico,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,Lesão renal aguda,entrada,int64,"1 se a patologia foi registada nesse dia, 0 se não"
+D2,dias_ate_alta,alvo,int64,Nº de dias com sinais vitais que faltam até à alta (0 no último dia)
+D3,episodio,identificação,str,Código do episódio (EPnnn)
+D3,sat_o2_media,entrada,float64,Média da saturação de oxigénio do internamento (%)
+D3,sat_o2_dp,entrada,float64,Desvio-padrão da saturação de oxigénio do internamento (%)
+D3,puls_rate_media,entrada,float64,Média do pulso do internamento (bpm)
+D3,puls_rate_dp,entrada,float64,Desvio-padrão do pulso do internamento (bpm)
+D3,perfusion_media,entrada,float64,Média da perfusão do internamento (%)
+D3,perfusion_dp,entrada,float64,Desvio-padrão da perfusão do internamento (%)
+D3,pct_dessaturacao,entrada,float64,% das horas medidas do internamento com saturação < 90 %
+D3,pct_bradicardia,entrada,float64,% das horas medidas do internamento com pulso < 100 bpm
+D3,pct_taquicardia,entrada,float64,% das horas medidas do internamento com pulso > 180 bpm
+D3,pct_baixa_perfusao,entrada,float64,"% das horas medidas do internamento com perfusão < 0,7 %"
+D3,duracao,entrada,int64,Nº de dias com sinais vitais do episódio (duração do internamento)
+D3,comeca_no_limite,entrada,int64,1 se o episódio começa no 1.º dia dos dados (início pode ser anterior)
+D3,termina_no_limite,entrada,int64,1 se o episódio termina no último dia dos dados (alta desconhecida)
+D3,Doença das membranas hialinas,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Icterícia neonatal,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Anemia,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Citomegalovírus,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Displasia broncopulmonar,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Persistência do canal arterial,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Refluxo gastroesofágico,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Sépsis,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Lesão renal aguda,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,Retinopatia da prematuridade,entrada,int64,"1 se o episódio teve a patologia em algum dia do internamento, 0 se não"
+D3,n_patologias,entrada,int64,Nº de patologias distintas registadas no episódio
